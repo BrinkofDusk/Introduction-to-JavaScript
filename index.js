@@ -1,26 +1,36 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-
+let votinAge = 18
+console.log(votinAge > 18);
 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-
+let a = 5;
+let b = 3;
+if (b < a) {
+    a += b;
+}
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
-
+let a = "1999";
+Number(a);
+parseInt(a);
 
 
 
 //Task d: Write a function to multiply a*b 
 
 
-
+function times(a, b) {
+    let product = a * b;
+    return product;
+}
 
 
 /************************************************************** Task 2 **************************************************************/
@@ -28,7 +38,11 @@
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
 
-
+function dogYears(a) {
+    let dYears = a * 7;
+    let msg = "1 human year is equal to 7 dog years";
+    console.log(dYears + "" + msg);
+}
 
 
 /************************************************************** Task 3 **************************************************************/
@@ -49,8 +63,50 @@
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
+function dogFeeder(p, y) {
+    let feedADay;
+    if (y >= 1) {
+        if (p <= 5) {
+            feedADay = .05 * p;
+            return feedADay * 16;
+        }
+        else if (p > 5 && p <= 10) {
+            feedADay = .04 * p;
+            return feedADay * 16;
+        }
+        else if (p > 10 && p <= 15) {
+            feedADay = .03 * p;
+            return feedADay * 16;
+        }
+        else if (p > 15) {
+            feedADay = .02 * p;
+            return feedADay * 16;
+        } else {
+            return "Invalid!!! That is not a dog!!";
+        }
+    }
+    else {
+        if (y >= .16 && y <= .33) {
+
+            feedADay = .1 * p;
+            return feedADay * 16;
+        }
+        else if (y >= .33 && y >= .58) {
+            feedADay = .05 * p;
+            return feedADay * 16;
+        }
+        else if (y >= .58 && y <= 1) {
+            feedADay = .04 * p;
+            return feedADay * 16;
+        }
+        else {
+            return "Puppy is too young, should still be nursing";
+        }
+    }
 
 
+    
+}
 
 
 /************************************************************** Task 4 **************************************************************/
