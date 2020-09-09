@@ -116,7 +116,26 @@ function dogFeeder(p, y) {
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
+function RPC(a) {
+    let pChoice;
+    function choiceConvert(s) {
+
+        if (s == "rock") {
+        return 1
+    }
+    else if (s == "scissors") {
+        pChoice = 2;
+    }
+    else if (s == "paper") {
+        
+    }
+    else {
+        return "You entered an invalid argument";
+    }
+
+    let cChoice = math.random() * 3;
+
+}
   
 
 /************************************************************** Task 5 **************************************************************/
